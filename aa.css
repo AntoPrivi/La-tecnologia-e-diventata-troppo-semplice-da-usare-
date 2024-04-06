@@ -1,0 +1,100 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.f1 {
+    width: 150px;
+    height: 50px;
+}
+.acaso {
+    position: absolute;
+    background-image: url(foto-arancione2.jpeg);
+    background-repeat: no-repeat;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+.acaso p {
+    position: relative;
+    font-size: 50px;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+
+
+header {
+    width: 1100px;
+    margin: 50px; 
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header ul :hover {
+    color: black;
+    text-decoration: underline;
+}
+
+header ul {
+    color: black;
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.paragrafo1 {
+    display: grid;
+    max-width: 1120px;
+    margin: auto;
+    grid-template-columns: 2fr 2fr;
+    gap: 150px;
+
+}
+
+.paragrafo1 h2 {
+    font-size: 50px;
+
+}
+
+.paragrafo1 p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.paragrafo1 img {
+    justify-items: right;
+}
+
+.paragrafo2 {
+    display: grid;
+    max-width: 1120px;
+    margin: auto;
+    grid-template-columns: 2fr 2fr;
+    gap: 150px;
+}
+
+.paragrafo2 h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.paragrafo2 p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.paragrafo2 img {
+    width: 2000px;
+    justify-items: right;
+}
+
+.footer {
+    margin: 20px;
+    padding: 20px;
+}
