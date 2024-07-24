@@ -1,4 +1,5 @@
 body {
+    width: 100vw;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,29 +9,29 @@ body {
     height: 50px;
 }
 
-header {
+header, footer {
     max-width:1100px;
     margin: auto; 
     display: flex;
     justify-content: space-between;
-    padding: 48px 0;
+    padding: 24px 24px;
 }
 
-header nav ul {
+header nav ul, footer nav ul{
     display: flex;
     list-style-type: none;
     gap: 16px;
 }
 
-header ul :hover {
+header ul :hover, footer ul :hover {
     color: black;
     text-decoration: underline;
 }
 
 .acaso {
-    background-image: url(Foto\ arancione.jpg);
-    width: 1800px;
-    height: 1000px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     margin: 0;
@@ -38,14 +39,19 @@ header ul :hover {
     top: 0;
 }
 
+.acaso img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .acaso p {
-    max-width: 30%;
+    position: absolute;
+    width: 30vw;
     line-height: 1;
     margin: 50px;
     padding: 50px;
-    color: white;
+    color: black;
     font-weight: bolder;
-    position: relative;
     font-size: 80px;
     left: 0;
     top: 0;
@@ -63,7 +69,6 @@ header ul :hover {
 
 .paragrafo1 h2 {
     font-size: 50px;
-
 }
 
 .paragrafo1 p {
@@ -101,7 +106,7 @@ header ul :hover {
 
 .box {
     margin: 0;
-    width: 2000px;
+    width: 100vw;
     height: 300px;
     background-color: #9C93FE;
 }
@@ -122,7 +127,7 @@ header ul :hover {
 
 .box2 {
     margin: 0;
-    width: 2000px;
+    width: 100vw;
     height: 300px;
     background-color: #9C93FE;
 }
@@ -137,22 +142,92 @@ header ul :hover {
     height: 50px;
 }
 
-footer {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 48px 0;
+.panino{
+    align-items: center;
+    display: none;
 }
 
-footer nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 16px;
+@media (max-width: 600px) {
 
-}
+    .acaso p {
+        width: 35vw;
+        margin: 40px;
+        font-size: 20px;
+        padding: 0px 0px;
+    }
 
-footer :hover {
-    color: black;
-    text-decoration: underline;
+    header img, footer img  {
+        width: 20vw;
+    }
+
+    header a {
+        display: none;
+    }
+
+    .panino {
+        top: 33px;
+        position: absolute;
+        height: 30px;
+        display: block;
+    }
+
+    .paragrafo1 h2 {
+        left: 30px;
+        font-size: 25px;
+    }
+
+    .paragrafo1 p {
+        font-size: 10px;
+    }
+
+    .paragrafo1 img {
+        padding: 25px 0px;
+        gap: 0px;
+        float: none;
+        width: 80vw;
+        height: 20vw;
+    }
+    
+    .paragrafo2 h3 {
+        font-size: 25px;
+    }
+
+    .paragrafo2 p {
+        margin: 0px;
+        font-size: 10px;
+    }
+
+    .paragrafo2 img {
+        padding: 25px 0px;
+        width: 100vw;
+
+    }
+
+    .sottobox h4 {
+        padding: 10px 10px;
+        font-size: 25px;
+    }
+
+    .sottobox p {
+        padding: 0px 0px;
+        font-size: 10px;
+    }
+
+    .bbbox h5{
+        margin: 0px;
+        float: left;
+        font-size: 25px;
+    }
+
+    .paragrafo1 {
+        margin: 20px;
+        gap: 20px;
+        padding: 0px 0px;
+    }
+
+    .paragrafo2 {
+        margin: 20px;
+        gap: 20px;
+        padding: 0px 0px;
+    }
 }
