@@ -35,8 +35,6 @@ header ul :hover, footer ul :hover {
     position: relative;
     background-repeat: no-repeat;
     margin: 0;
-    left: 0;
-    top: 0;
 }
 
 .acaso img {
@@ -72,6 +70,7 @@ header ul :hover, footer ul :hover {
 }
 
 .paragrafo1 p {
+    width: 700px;
     display: flex;
     font-size: 15px;
     line-height: 1.2;
@@ -86,7 +85,7 @@ header ul :hover, footer ul :hover {
     display: grid;
     margin: 80px;
     grid-template-columns: 2fr 2fr;
-    gap: 150px;
+    gap: 0px;
 }
 
 .paragrafo2 h3 {
@@ -95,6 +94,7 @@ header ul :hover, footer ul :hover {
 }
 
 .paragrafo2 p {
+    width: 700px;
     display: flex;
     font-size: 15px;
     line-height: 1.2;
@@ -172,12 +172,15 @@ header ul :hover, footer ul :hover {
     }
 
     .paragrafo1 h2 {
+        padding: 10px 0px;
         left: 30px;
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .paragrafo1 p {
-        font-size: 10px;
+        padding: 10px 0px;
+        width: auto;
+        font-size: 8px;
     }
 
     .paragrafo1 img {
@@ -189,12 +192,15 @@ header ul :hover, footer ul :hover {
     }
     
     .paragrafo2 h3 {
-        font-size: 25px;
+        padding: 10px 0px;
+        font-size: 15px;
     }
 
     .paragrafo2 p {
+        padding: 10px 0px;
+        width: auto;
         margin: 0px;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .paragrafo2 img {
